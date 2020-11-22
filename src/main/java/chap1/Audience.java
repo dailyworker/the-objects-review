@@ -1,4 +1,4 @@
-package ticket_seller;
+package chap1;
 
 public class Audience {
     private Bag bag;
