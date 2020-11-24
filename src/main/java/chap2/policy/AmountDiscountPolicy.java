@@ -4,7 +4,7 @@ import chap2.Money;
 import chap2.Screening;
 import chap2.policy.condition.DiscountCondition;
 
-public class AmountDiscountPolicy extends DiscountPoilcy {
+public class AmountDiscountPolicy extends DiscountPolicy {
     private Money discountAmount;
 
     public AmountDiscountPolicy(Money discountAmount, DiscountCondition... conditions) {

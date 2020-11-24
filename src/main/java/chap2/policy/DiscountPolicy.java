@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public abstract class DiscountPoilcy {
+public abstract class DiscountPolicy {
     private List<DiscountCondition> conditions = new ArrayList<>();
 
-    public DiscountPoilcy(DiscountCondition ... conditions) {
+    public DiscountPolicy(DiscountCondition ... conditions) {
         this.conditions = Arrays.asList(conditions);
     }
 
