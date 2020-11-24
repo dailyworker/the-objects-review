@@ -1,6 +1,5 @@
 package chap2;
 
-import chap2.policy.DiscountPoilcy;
 import chap2.policy.DiscountPolicy;
 
 import java.time.Duration;
