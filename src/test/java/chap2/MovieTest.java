@@ -48,4 +48,16 @@ public class MovieTest {
         System.out.println("adopted percent discount policy movie fee is : " + expected.toString());
         assertTrue(actual.isGreaterThanOrEqaul(expected));
     }
+
+    @Test
+    public void is_none_discount_policy_movie() {
+        Movie starWars = new Movie("스타워즈", Duration.ofMinutes(210), Money.amountToWon(10000), new NoneDiscountPolicy());
+        Screening screening = new Screening(starWars, 1,
+                LocalDateTime.of(LocalDate.of(2020, 11, 24),
+                LocalTime.of(14, 25)));
+
+        Money actual = starWars.calculateMovieFee(screening);
+        Money expected = new Money(BigDecimal.valueOf(10001));
+        assertTrue(actual.isLessThan(expected));
+    }
 }
