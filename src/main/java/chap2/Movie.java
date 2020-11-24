@@ -1,6 +1,7 @@
 package chap2;
 
 import chap2.policy.DiscountPoilcy;
+import chap2.policy.DiscountPolicy;
 
 import java.time.Duration;
 
@@ -8,13 +9,13 @@ public class Movie {
     private String title;
     private Duration runningTime;
     private Money fee;
-    private DiscountPoilcy discountPoilcy;
+    private DiscountPolicy discountPolicy;
 
-    public Movie(String title, Duration runningTime, Money fee, DiscountPoilcy discountPoilcy) {
+    public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
         this.title = title;
         this.runningTime = runningTime;
         this.fee = fee;
-        this.discountPoilcy = discountPoilcy;
+        this.discountPolicy = discountPolicy;
     }
 
     public Money getFee() {
@@ -22,6 +23,10 @@ public class Movie {
     }
 
     public Money calculateMovieFee(Screening screening) {
-        return fee.minus(discountPoilcy.calculateDiscountAmount(screening));
+        if(discountPolicy == null){
+            return fee;
+        }
+
+        return fee.minus(discountPolicy.calculateDiscountAmount(screening));
     }
 }
