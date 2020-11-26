@@ -5,7 +5,7 @@ import chap2.Screening;
 
 public class NoneDiscountPolicy implements DiscountPolicy {
     @Override
-    public Money calculateDiscountAmount(Screening screening) {
+    public Money calculateDiscount(Screening screening) {
         return Money.ZERO;
     }
 }

@@ -15,7 +15,7 @@ public abstract class DefaultDiscountPolicy implements DiscountPolicy {
         this.conditions = Arrays.asList(conditions);
     }
 
-    public Money calculateDiscountAmount(Screening screening) {
+    public Money calculateDiscount(Screening screening) {
         for(DiscountCondition each : conditions) {
             if (each.isSatisfiedBy(screening)) {
                 return getDiscountAmount(screening);

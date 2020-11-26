@@ -22,11 +22,7 @@ public class Movie {
     }
 
     public Money calculateMovieFee(Screening screening) {
-        if(discountPolicy == null){
-            return fee;
-        }
-
-        return fee.minus(discountPolicy.calculateDiscountAmount(screening));
+        return fee.minus(discountPolicy.calculateDiscount(screening));
     }
 
     public void changeDiscountPolicy(DiscountPolicy discountPolicy) {

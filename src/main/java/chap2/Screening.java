@@ -1,6 +1,7 @@
 package chap2;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
 
 public class Screening {
     private Movie movie;

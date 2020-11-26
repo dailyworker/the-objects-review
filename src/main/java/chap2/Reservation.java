@@ -12,4 +12,20 @@ public class Reservation {
         this.fee = fee;
         this.audienceCount = audienceCount;
     }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public Screening getScreening() {
+        return screening;
+    }
+
+    public Money getFee() {
+        return fee;
+    }
+
+    public int getAudienceCount() {
+        return audienceCount;
+    }
 }
