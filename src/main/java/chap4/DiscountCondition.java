@@ -16,6 +16,22 @@ public class DiscountCondition {
     return type;
   }
 
+  public boolean isCountable(DayOfWeek dayOfWeek, LocalTime time) {
+    if(type != DiscountConditionType.PERIOD) {
+      throw new IllegalArgumentException("올바르지 않은 값입니다.");
+    }
+    return this.dayOfWeek.equals(dayOfWeek) &&
+        this.startTime.compareTo(time) <= 0 &&
+        this.endTime.compareTo(time) >= 0;
+  }
+
+  public boolean isCountable(int sequence) {
+    if(type != DiscountConditionType.SEQUENCE) {
+      throw new IllegalArgumentException("올바르지 않은 값입니다.");
+    }
+    return this.sequence == sequence;
+  }
+
   public void setType(DiscountConditionType type) {
     this.type = type;
   }
