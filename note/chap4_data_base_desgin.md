@@ -1,11 +1,4 @@
-# 오브젝트 - 챕터4
-
-Created: 2020년 12월 24일 오후 4:26
-Created By: Sean Sin
-Last Edited By: Sean Sin
-Last Edited Time: 2021년 4월 12일 오후 8:41
-Status: In Progress 🙌
-Type: Book Review
+# 오브젝트 - 챕터4 설계 품질과 트레이드오프
 
 # 개요
 
