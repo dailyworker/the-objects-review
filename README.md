@@ -5,3 +5,5 @@
 1. [챕터 1 - 티켓 판매 어플리케이션](https://github.com/dailyworker/the-objects-review/blob/master/note/chap1_ticket_seller_application.md)
 
 2. [챕터 2 - 영화 예매 어플리케이션](https://github.com/dailyworker/the-objects-review/blob/master/note/chap2_movie_reservation_application.md)
+
+3. [챕터 4 - 설계 품질과 트레이드오프](https://github.com/dailyworker/the-objects-review/blob/master/note/chap4_data_base_desgin.md)
