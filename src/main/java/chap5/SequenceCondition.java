@@ -7,7 +7,7 @@ public class SequenceCondition {
     this.sequence = sequence;
   }
 
-  private boolean isSatisfiedBySequence(Screening screening) {
+  public boolean isSatisfiedBy(Screening screening) {
     return sequence == screening.getSequence();
   }
 }
