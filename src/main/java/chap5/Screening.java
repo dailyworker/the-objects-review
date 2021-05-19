@@ -3,7 +3,7 @@ package chap5;
 import java.time.LocalDateTime;
 
 public class Screening {
-  private Movie movie;
+  private DiscountPolicy movie;
   private int sequence;
   private LocalDateTime whenScreened;
 

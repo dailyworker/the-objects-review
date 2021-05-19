@@ -2,7 +2,7 @@ package chap5;
 
 import java.time.Duration;
 
-public class NoneDiscountMovie extends Movie {
+public class NoneDiscountMovie extends DiscountPolicy {
 
   public NoneDiscountMovie(String title, Duration runningTime, Money fee,
       DiscountCondition... discountConditions) {

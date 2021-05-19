@@ -2,7 +2,7 @@ package chap5;
 
 import java.time.Duration;
 
-public class AmountDiscountMovie extends Movie {
+public class AmountDiscountMovie extends DiscountPolicy {
   private final Money discountAmount;
 
   public AmountDiscountMovie(String title, Duration runningTime, Money fee,
